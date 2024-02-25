@@ -59,7 +59,7 @@ export default function HomePage() {
           <input
             className="input input-bordered flex-grow"
             type="text"
-            placeholder="Name"
+            placeholder="Name" 
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
