@@ -29,7 +29,7 @@ export default function HomePage() {
 
   async function aiRun() {
     event.preventDefault();
-    const prompt = `Create a resume for ${name} with email ${email}, currently working as ${occupation}, residing at ${address}. Summary: ${summary}. Work Experience: ${experince}. Education: School - ${school}, College - ${college}, UG - ${ug}, PG - ${pg}. Certifications: ${cert}. Skills: ${skill}. Professional Contacts: ${pc}. Languages: ${email}. Achievements: ${achie}. Interests and Hobbies: ${ih}`;
+    const prompt = `Create a resume for ${name} with email ${email}, currently working as ${occupation}, residing at ${address}. Summary: ${summary}. Work Experience: ${experince}. Education: School - ${school}, College - ${college}, UG - ${ug}, PG - ${pg}. Certifications: ${cert}. Skills: ${skill}. Professional Contacts: ${pc}. Languages: ${email}. Achievements: ${achie}. Interests and Hobbies: ${ih}. Give the resume in harvard format. At the end of each topic, add a //. `;
     setLoading(true);
     try {
       const result = await model.generateContent(prompt);
